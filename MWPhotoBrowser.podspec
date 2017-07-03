@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/mwaterfall'
 
   s.source = {
-    :git => 'https://github.com/mwaterfall/MWPhotoBrowser.git',
-    :tag => '2.1.2'
+    :git => 'https://github.com/pcicp/MWPhotoBrowser.git',
+    :branch => 'pcicp-patch-1'
   }
   s.platform = :ios, '7.0'
   s.source_files = 'Pod/Classes/**/*'
@@ -37,12 +37,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
 
-  s.dependency 'MBProgressHUD', '~> 0.9'
+  s.dependency 'MBProgressHUD', '~> 1.0.0'
   s.dependency 'DACircularProgress', '~> 2.3'
-
-  # SDWebImage
-  # 3.7.2 contains bugs downloading local files
-  # https://github.com/rs/SDWebImage/issues/1109
-  s.dependency 'SDWebImage', '~> 3.7', '!= 3.7.2'
+  s.dependency 'SDWebImage', '~> 4.0.0'
 
 end
