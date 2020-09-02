@@ -32,7 +32,8 @@ Pod::Spec.new do |s|
   s.resources = 'Pod/Assets/*.png'
   s.requires_arc = true
 
-  s.frameworks = 'ImageIO', 'QuartzCore', 'Photos', 'MediaPlayer'
+  s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
+  s.weak_frameworks = 'Photos'
 
   s.dependency 'MBProgressHUD', '~> 1.0'
   s.dependency 'DACircularProgress', '~> 2.3'
